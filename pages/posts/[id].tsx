@@ -3,7 +3,7 @@ import { GetServerSideProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
 import React, { useState } from 'react'
 import { IPost } from '../../types/posts'
-import MainLayout from '../MainLayout'
+import MainLayout from '../../layouts/MainLayout'
 import styled from 'styled-components'
 
 const Post = ({ serverPosts }) => {
@@ -23,7 +23,10 @@ const Post = ({ serverPosts }) => {
     padding: 0 2rem;
   `
   return (
-    <MainLayout>
+    <MainLayout
+      title={'Post page ' + post.title}
+      keywords={'posts, writing posts, ' + post.title + ', ' + post.body}
+    >
       <Title>Title: {post.title}</Title>
       <BodyText>Message: {post.body}</BodyText>
     </MainLayout>

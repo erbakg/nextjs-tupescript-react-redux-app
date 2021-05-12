@@ -14,6 +14,7 @@ const StyledPostDiv = styled.div`
   padding: 1rem;
   display: flex;
   flex-direction: row;
+  background-color:#fff
 `
 const StyledTitle = styled.h1`
   font-size: 2rem;

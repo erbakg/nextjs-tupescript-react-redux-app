@@ -4,7 +4,7 @@ import { useTypedSelector } from '../hooks/useTypedSelector'
 import { NextThunkDispatch, wrapper } from '../store'
 import { FetchPosts } from '../store/action-creators/posts'
 import { IPost } from '../types/posts'
-import MainLayout from './MainLayout'
+import MainLayout from '../layouts/MainLayout'
 interface PostsListProps {
   posts:IPost[]
 }

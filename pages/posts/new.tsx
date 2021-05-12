@@ -1,6 +1,6 @@
 import React from 'react'
 import { useInput } from '../../hooks/useInput'
-import MainLayout from '../MainLayout'
+import MainLayout from '../../layouts/MainLayout'
 import styled from 'styled-components'
 import axios from 'axios'
 import { useRouter } from 'next/dist/client/router'
@@ -67,7 +67,7 @@ export default function New() {
    .then((resp)=>router.push('/'))
   }
   return (
-    <MainLayout>
+    <MainLayout title={'Adding post page'}>
       <PageTitle>Lets create a new Post</PageTitle>
       <InputBox>
         <Input {...title} placeholder="Write post title" />
